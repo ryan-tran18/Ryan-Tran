@@ -1,8 +1,8 @@
-\# Ryan Tran
+# Ryan Tran
 
 
 
-\## Accounting \& Finance Student
+## Accounting & Finance Student
 
 
 
@@ -14,11 +14,11 @@ I am interested in building a career in accounting, particularly tax accounting,
 
 
 
-\### Education
+### Education
 
 
 
-\*\*University of Hawaiʻi at Mānoa — Shidler College of Business\*\*  
+**University of Hawaiʻi at Mānoa — Shidler College of Business**  
 
 BBA Candidate, Accounting and Finance  
 
@@ -30,71 +30,71 @@ GPA: 3.65
 
 
 
-\### Areas of Interest
+### Areas of Interest
 
 
 
-\- Tax Accounting
+- Tax Accounting
 
-\- Financial Accounting
+- Financial Accounting
 
-\- Managerial Accounting
+- Managerial Accounting
 
-\- Corporate Finance
+- Corporate Finance
 
-\- Data Analysis
+- Data Analysis
 
-\- Accounting Information Systems
-
-
-
-\### Experience \& Involvement
+- Accounting Information Systems
 
 
 
-\*\*Beta Alpha Psi\*\*  
+### Experience & Involvement
+
+
+
+**Beta Alpha Psi**  
 
 Initiate Member | January 2025–Present
 
 
 
-\- Participate in networking events with accounting professionals and alumni.
+- Participate in networking events with accounting professionals and alumni.
 
-\- Develop communication, teamwork, and problem-solving skills.
+- Develop communication, teamwork, and problem-solving skills.
 
-\- Served as a tutor and fundraising chair.
+- Served as a tutor and fundraising chair.
 
-\- Participate in professional development activities and seminars.
-
-
-
-\### Technical \& Academic Skills
+- Participate in professional development activities and seminars.
 
 
 
-\- Microsoft Excel
-
-\- PivotTables
-
-\- Financial analysis
-
-\- Database systems
-
-\- BPMN
-
-\- UML / ER modeling
-
-\- DBMS implementation
-
-\- Accounting and tax analysis
+### Technical & Academic Skills
 
 
 
-\### Projects
+- Microsoft Excel
+
+- PivotTables
+
+- Financial analysis
+
+- Database systems
+
+- BPMN
+
+- UML / ER modeling
+
+- DBMS implementation
+
+- Accounting and tax analysis
 
 
 
-\*\*Accounting Information Systems Database Project\*\*
+### Projects
+
+
+
+**Accounting Information Systems Database Project**
 
 
 
@@ -102,7 +102,7 @@ Worked on a team to design and implement an accounting information system using 
 
 
 
-\### Career Goal
+### Career Goal
 
 
 
@@ -110,11 +110,11 @@ My goal is to develop strong accounting and tax knowledge while gaining practica
 
 
 
-\---
+---
 
 
 
-\## Resume
+## Resume
 
 
 
