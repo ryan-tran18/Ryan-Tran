@@ -38,12 +38,14 @@ CPA Eligible: December 2027
 
 ## Experience
 
-### Uber
+### Uber - Driver/Food Delivery
+May 2025 - Present
 - Completed 913 deliveries and 132 rides.
 - Maintained a 98% satisfaction rating.
 - Developed customer service, time management, and problem-solving skills.
 
-### Saito & Pho
+### Saito & Pho - Server
+May 2025 - Present
 - Performed daily financial reconciliations involving approximately $2,000–$3,000.
 - Developed accuracy and attention to detail in handling financial information.
 
