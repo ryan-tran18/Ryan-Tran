@@ -118,5 +118,5 @@ My goal is to develop strong accounting and tax knowledge while gaining practica
 
 
 
-See \[RESUME.md](RESUME.md) for my detailed resume.
+See [RESUME.md](RESUME.md) for my detailed resume.
 
