@@ -1,4 +1,7 @@
 ---
+title: FX Transaction Hedging Executive Brief
+scenario: api-ingredients
+llm_used: GPT-6
 type: brief
 engagement: api-ingredients
 capability: fx-hedging
@@ -18,11 +21,11 @@ hypothesis: "I expect the forward hedge to provide the most predictable USD proc
 
 ## Executive Summary
 
-A U.S. active pharmaceutical ingredient manufacturer expects to receive €8,200,000 from an Italian contract manufacturer in 91 days. If the euro weakens before payment, converting the receivable into dollars will generate less USD revenue. This brief frames the exposure and compares forward, money-market, and options hedges. At the indicative forward rate of $1.1653 per euro, the company could lock in approximately $9,557,460 before costs. The analysis will compare certainty, downside protection, premiums, financing requirements, and potential upside. No final hedge recommendation will be made until the model and market inputs are verified.
+A U.S. active pharmaceutical ingredient manufacturer expects to receive €8,200,000 from an Italian contract manufacturer in 91 days. If the euro weakens before payment, converting the receivable into dollars will generate less USD revenue. This brief frames the exposure and compares forward, money-market, and options hedges. At the indicative forward rate of $1.1653 per euro, the company could lock in approximately $9,555,460 before costs. The analysis will compare certainty, downside protection, premiums, financing requirements, and potential upside. No final hedge recommendation will be made until the model and market inputs are verified.
 
 ## Background & Objectives
 
-The company has a fixed euro receivable but uncertain dollar proceeds. A 5% decline from the indicative forward-rate benchmark would reduce the equivalent proceeds by approximately $477,873, from $9,557,460 to $9,079,587. This is an illustrative stress test, not a forecast or a calculation from a verified spot quote.
+The company has a fixed euro receivable but uncertain dollar proceeds. A 5% decline from the indicative forward-rate benchmark would reduce the equivalent proceeds by approximately $477,773, from $9,555,460 to $9,077,687. This is an illustrative stress test, not a forecast or a calculation from a verified spot quote.
 
 The objective is to identify how each hedge affects expected USD proceeds and downside risk. The analysis will also consider cash-flow predictability, opportunity cost, and implementation constraints.
 
