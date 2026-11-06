@@ -102,6 +102,31 @@ For a foreign-currency receivable, borrow the present value of the EUR receivabl
 
 Compare the money-market result with the forward result. Because the market quotes are indicative proxies and may use different conventions, a difference does not automatically indicate a formula error.
 
+### Money-Market Hedge — Three-Step Process
+
+The company has a EUR receivable due in 91 days. It can lock in the USD value today using a money-market hedge.
+
+**Step 1 — Borrow EUR today**
+
+Borrow the present value of the future EUR receivable:
+
+EUR_BORROW = FC_AMT / (1 + R_FC × T_DAYS / BASIS)
+
+**Step 2 — Convert EUR to USD at spot**
+
+Convert the borrowed euros into U.S. dollars using today's spot exchange rate:
+
+USD_SPOT = EUR_BORROW × S0_in
+
+**Step 3 — Invest USD until maturity**
+
+Invest the USD proceeds at the U.S. interest rate until the receivable matures:
+
+MM_PROCEEDS = USD_SPOT × (1 + R_USD × T_DAYS / BASIS)
+
+At maturity, collect the EUR receivable and use it to repay the EUR loan. The USD investment has grown into the locked-in dollar proceeds.
+
+
 ### Step 5 — EUR put option
 
 `FV_PREM_PUT = -PREM_PUT * FC_AMT * DF_USD`
