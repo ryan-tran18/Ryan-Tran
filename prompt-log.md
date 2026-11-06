@@ -14,6 +14,23 @@ The initial setup needed to be aligned more closely with the instructor's requir
 **How it was caught:**  
 Reviewed the course onboarding and portfolio repository instructions before committing the files.
 
+## Stage 2 — FX Hedging Model Specification
+
+**Scenario:** 19 — api-ingredients
+
+**Work completed:**
+- Developed the FX hedging model specification.
+- Defined the required inputs, assumptions, and named ranges.
+- Identified forward, money-market, put-option, and call-option hedge strategies.
+- Established adverse, unchanged, and favorable exchange-rate scenarios.
+- Defined formula requirements and validation checks.
+
+**Draft gap identified:** The original specification needed clearer separation between the capability overview and the detailed model requirements.
+
+**Correction made:** Moved the detailed specification into `capabilities/fx-hedging/spec.md` and replaced the README with a concise capability overview and engagement table.
+
+**Next step:** Build and audit the Excel workbook using the specification.
+
 # Stage 3 Prompt Log Entry — Scenario 19 (`api-ingredients`)
 
 **Date:** 2026-10-25
