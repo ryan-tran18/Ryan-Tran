@@ -72,6 +72,22 @@ The ECB rate is a reference rate, not an executable dealing quote. The Treasury 
 - A long EUR call does not, by itself, protect the downside of an existing EUR receivable. Show it as a comparison and do not label it the recommended protective hedge.
 - The model's output is a decision aid, not an executable trade instruction.
 
+### Input Data and Sources
+
+| Input | Value | Source | Data Type |
+|---|---:|---|---|
+| FC_AMT | €8,200,000 | Scenario 19 assignment | Contract input |
+| T_DAYS | 91 | Scenario 19 assignment | Contract input |
+| F0_in | 1.1653 USD/EUR | Scenario 19 assignment | Indicative forward quote |
+| S0_in | 1.1193 USD/EUR | ECB euro reference rates, October 23, 2026 | Market proxy |
+| R_USD | 4.04% | U.S. Treasury / Federal Reserve rate data | Market proxy |
+| R_FC | 2.666% | Euribor / EMMI | Market proxy |
+| PREM_PUT | 0.0147 USD/EUR | Scenario 19 assignment | Option premium |
+| PREM_CALL | 0.0199 USD/EUR | Scenario 19 assignment | Option premium |
+| BASIS | 360 | Model day-count convention | Assumption |
+
+All market rates are indicative proxies and should not be represented as executable transaction quotes.
+
 ## 4. Calculation Flow
 
 ### Step 1 — Interest factors
@@ -204,6 +220,39 @@ Review the workbook after the first implementation and record at least one revie
 - At `S_T = K_PUT`, put proceeds should equal strike conversion value less the carried premium.
 - Forward proceeds should not change across the settlement sensitivity grid.
 - Check the money-market result against the forward rate implied by the selected spot and interest-rate assumptions. Investigate differences, but do not force equality when the input rates and conventions are not comparable.
+
+### Validation Rules
+
+**1. Covered Interest Parity (CIP) Check**
+
+Calculate the CIP-implied forward rate:
+
+F_CIP = S0_in × (1 + R_USD × T_DAYS / BASIS) / (1 + R_FC × T_DAYS / BASIS)
+
+Compare the CIP-implied forward with the quoted forward rate (F0_in).
+
+The model should flag a difference greater than 1.00% on a relative basis:
+
+ABS(F0_in - F_CIP) / F_CIP > 1.00%
+
+The 1.00% threshold is a screening tolerance because the model uses indicative market proxies rather than synchronized executable market quotes. It is not a claim that arbitrage exists.
+
+**2. No-Error Check**
+
+All calculated output cells must be free of spreadsheet errors, including #REF!, #DIV/0!, #VALUE!, and #NAME?.
+
+**3. Formulas-Only Check**
+
+All calculated outputs must use Excel formulas referencing named inputs. No calculated output may be manually hard-coded.
+
+**4. Named Range Check**
+
+All seven required contract inputs must have correctly attached named ranges.
+
+**5. Sensitivity Check**
+
+The sensitivity table must calculate automatically from the model's inputs and cover exchange-rate changes from -5% to +5% in 1% increments.
+
 
 ## 7. Sensitivity Plan
 
