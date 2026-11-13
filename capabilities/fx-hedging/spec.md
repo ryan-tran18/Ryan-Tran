@@ -247,7 +247,7 @@ All calculated outputs must use Excel formulas referencing named inputs. No calc
 
 **4. Named Range Check**
 
-All seven required contract inputs must have correctly attached named ranges.
+All ten required contract inputs must have correctly attached named ranges.
 
 **5. Sensitivity Check**
 
@@ -287,7 +287,10 @@ Use the Stage 2 workbook architecture:
 - **Cover:** scenario, purpose, model date, and status.
 - **Legend/Key:** input, assumption, formula, and cross-sheet reference color conventions.
 - **Inputs:** all scenario values, market data, sources, dates, and assumptions.
-- **Hedge calculations:** separate calculations for unhedged, forward, money-market, and option strategies.
+- **Forward:** Calculate the USD proceeds locked in by the forward contract.
+- **Money Market:** Calculate the USD proceeds from borrowing EUR, converting to USD at spot, and investing the USD until maturity.
+- **Put:** Calculate the USD proceeds from the EUR receivable protected by the put option, less the carried premium.
+- **Call:** Calculate the USD proceeds from the EUR receivable plus the call payoff, less the carried premium. Clearly label this as a comparison, not a downside-protection strategy.
 - **Sensitivity:** 11 settlement-rate scenarios and a comparison chart.
 - **Notes & Assumptions:** source notes, model limitations, validation checks, and review history.
 
