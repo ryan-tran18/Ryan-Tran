@@ -11,7 +11,7 @@ FX Transaction Hedging Project — Technical Specification
 | **Created by** | Ryan Tran |
 | **Updated by** | Ryan Tran |
 | **Date Created** | 2026-10-25 |
-| **Date Updated** | 2026-10-25 |
+| **Date Updated** | 2026-11-19 |
 | **Version** | 0.2 |
 | **LLM Used** (optional) | ChatGPT (GPT-6) — assisted with drafting and refining the technical specification |
 | **Role** | Treasury Analyst |
@@ -50,6 +50,19 @@ The objective is to estimate USD proceeds, compare outcomes under different sett
 | `K_PUT` | `=S0_in` | Strike at spot |
 | `K_CALL` | `=S0_in` | Strike at spot |
 | `BASIS` | 360 | Modeling convention; confirm against source conventions |
+
+### 2.2 Company-Specific Interest Rate Selection
+
+For the 91-day money-market hedge, the model should use company-specific bank borrowing and deposit rates rather than general market benchmarks whenever executable quotes are available.
+
+- **`R_FC` – EUR Borrowing Rate:** Use the all-in 91-day EUR borrowing rate quoted by the company's relationship bank. This rate should reflect the company's credit risk and applicable borrowing spread because the company must borrow euros to hedge its EUR receivable.
+- **`R_USD` – USD Deposit Rate:** Use the 91-day USD deposit or investment rate offered by the company's bank. This represents the interest the company would actually earn by converting the borrowed euros into dollars and investing those dollars until the receivable matures.
+
+Both rates should be obtained from the company's bank on the same valuation date, with matching maturity and documented day-count conventions.
+
+If company-specific bank quotes are unavailable, retain the current Treasury and Euribor figures only as provisional market proxies. Clearly disclose that these rates do not represent executable company borrowing or deposit rates. Replace them when appropriate bank quotes become available.
+
+When refreshing the model inputs, update `R_USD` and `R_FC` in the input tables, document each rate's source, observation date, annualized rate, and day-count convention, and carry the refreshed values into the workbook calculations.
 
 **Source notes**
 
